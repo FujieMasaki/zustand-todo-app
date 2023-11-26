@@ -1,0 +1,22 @@
+.add-todo-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-todo-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-todo-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  cursor: pointer;
+}

@@ -5,15 +5,16 @@ const TodoList = () => {
   const toggleTodo = useTodoStore((state) => state.toggleTodo);
 
   return (
-    <div>
+    <div className="todo-list">
       {todos.map((todo) => (
-        <div key={todo.id}>
+        <div key={todo.id} className="todo-item">
           <input
             type="checkbox"
             checked={todo.done}
             onChange={() => toggleTodo(todo.id)}
+            className="todo-checkbox"
           />
-          {todo.text}
+          <span className={todo.done ? "todo-done" : ""}>{todo.text}</span>
         </div>
       ))}
     </div>
